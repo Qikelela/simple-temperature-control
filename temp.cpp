@@ -75,7 +75,7 @@ int main() {
             val = val / 1000.0;
             printf(" \x1B[37m%s%.0f°C", temp[i].name.c_str(), val);
             val_graph = "";
-            val+=00.0f;
+            val+=00.0f; //debug
             min_max = temp[i].max - temp[i].min;
             for (float j = temp[i].min; j < temp[i].max-1.0; j+=min_max/10.0) {
                 if (j < val) { val_graph+= "■"; } else { val_graph+="☐"; }
